@@ -47,6 +47,12 @@ jobs:
       matrix:
         include:
           - os: macos-latest
+            platform: macos-apple-silicon-arm64
+            script: package:mac:arm64
+          - os: macos-latest
+            platform: macos-intel-x64
+            script: package:mac:x64
+          - os: macos-latest
             platform: macos-universal
             script: package:mac:universal
           - os: windows-latest
