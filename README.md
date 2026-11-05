@@ -62,6 +62,14 @@ npm run preview
 - The metronome uses the browser's Web Audio API and does not require network access. Tempo is temporary app memory; audio and tempo have been verified across the app packages.
 - This MVP has automated unit and app-level tests, but not a full browser end-to-end suite.
 
+## Support the project
+
+The app is free to use, with all features included and no account required. If it is useful to your practice, you can [support its development on Ko-fi](https://ko-fi.com/robertjooste). Support is entirely optional and does not unlock features.
+
+## Automated desktop releases
+
+GitHub Actions builds unsigned macOS (universal), Windows (x64 portable), and Linux (x64 AppImage) packages and attaches them to a GitHub Release when a version tag is pushed. See [the release guide](docs/releasing.md) for the versioning and publishing steps. Builds do not currently include code signing or macOS notarization.
+
 ## Project documentation
 
 - [Changelog](CHANGELOG.md) — what changed in each version, including anything that affects stored data
