@@ -27,7 +27,7 @@ git tag -a v0.1.1 -m "0.1.1"
 git push origin v0.1.1
 ```
 
-The workflow rejects a tag that does not match `package.json`. It runs lint, tests, and the build, then creates three macOS ZIP options: Apple Silicon (arm64), Intel (x64), and universal (both architectures). It also creates a Windows x64 portable package and Linux x64 AppImage. Packaging is configured not to publish directly; after all package jobs pass, the workflow checks out the repository and creates a GitHub Release with generated notes and attaches the packages. The release page lists each file's size alongside its download link so users can compare the options.
+The workflow rejects a tag that does not match `package.json`. It runs lint, tests, and the build, then creates three macOS ZIP options: Apple Silicon (arm64), Intel (x64), and universal (both architectures). It also creates a Windows x64 portable package and Linux x64 AppImage. Only the installer files are uploaded as artifacts, excluding intermediate packaging directories and metadata. Packaging is configured not to publish directly; after all package jobs pass, the workflow checks out the repository and creates a GitHub Release with generated notes and attaches the packages. The release page lists each file's size alongside its download link so users can compare the options.
 
 Follow the run under the repository's **Actions** tab. If a job fails, fix the cause and push a corrected tag only after deleting the failed tag locally and remotely, or use a new version number. Do not overwrite a published version.
 
