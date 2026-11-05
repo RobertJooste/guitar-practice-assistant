@@ -12,6 +12,8 @@ Entries call out when a change affects stored data or backups, so users can tell
 - Backup import now asks for confirmation before replacing current data, explaining that the restore overwrites exercises, routines, songs, history, settings, and any active session.
 - UI tests for exercise create/edit/duplicate, routine creation and item management, backup-import confirmation, and invalid-backup rejection.
 - GitHub Actions CI workflow running lint, tests, and the production build on every pull request and push to `main`.
+- GitHub Actions release workflow building desktop packages and publishing them to GitHub Releases when a version tag is pushed.
+- README and user guide links to the optional Ko-fi support page.
 
 ### Changed
 
