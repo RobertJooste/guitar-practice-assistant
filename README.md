@@ -68,7 +68,7 @@ The app is free to use, with all features included and no account required. If i
 
 ## Automated desktop releases
 
-GitHub Actions builds unsigned macOS (universal), Windows (x64 portable), and Linux (x64 AppImage) packages and attaches them to a GitHub Release when a version tag is pushed. See [the release guide](docs/releasing.md) for the versioning and publishing steps. Builds do not currently include code signing or macOS notarization.
+GitHub Actions builds unsigned macOS ZIPs for Apple Silicon (arm64), Intel (x64), and universal Macs, plus Windows (x64 portable) and Linux (x64 AppImage) packages. It attaches them to a GitHub Release when a version tag is pushed; the release page shows each download's file size. See [the release guide](docs/releasing.md) for the versioning and publishing steps. Builds do not currently include code signing or macOS notarization.
 
 ## Project documentation
 
