@@ -49,18 +49,23 @@ jobs:
           - os: macos-latest
             platform: macos-apple-silicon-arm64
             script: package:mac:arm64
+            artifact_path: release/*.zip
           - os: macos-latest
             platform: macos-intel-x64
             script: package:mac:x64
+            artifact_path: release/*.zip
           - os: macos-latest
             platform: macos-universal
             script: package:mac:universal
+            artifact_path: release/*.zip
           - os: windows-latest
             platform: windows-x64
             script: package:win
+            artifact_path: release/*.exe
           - os: ubuntu-latest
             platform: linux-x64
             script: package:linux
+            artifact_path: release/*.AppImage
     steps:
       - uses: actions/checkout@v4
 
@@ -78,7 +83,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: guitar-practice-${{ matrix.platform }}
-          path: release/*
+          path: ${{ matrix.artifact_path }}
           if-no-files-found: error
 
   release:
