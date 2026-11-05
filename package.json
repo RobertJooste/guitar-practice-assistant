@@ -1,0 +1,67 @@
+{
+  "name": "guitar-practice",
+  "description": "A local-first companion for organizing and tracking guitar practice.",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "test": "vitest",
+    "preview": "vite preview",
+    "desktop": "npm run build && electron .",
+    "package:mac": "npm run package:mac:universal",
+    "package:mac:arm64": "npm run build && electron-builder --mac zip --arm64",
+    "package:mac:x64": "npm run build && electron-builder --mac zip --x64",
+    "package:mac:universal": "npm run build && electron-builder --mac zip --universal",
+    "package:win": "npm run build && electron-builder --win portable --x64",
+    "package:linux": "npm run build && electron-builder --linux AppImage --x64"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "electron": "^45.2.1",
+    "electron-builder": "^26.18.0",
+    "jsdom": "^27.0.0",
+    "oxlint": "^1.90.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.5",
+    "vite-plugin-pwa": "^2.0.0",
+    "vitest": "^5.1.0"
+  },
+  "main": "desktop/main.cjs",
+  "desktopName": "guitar-practice-companion",
+  "build": {
+    "appId": "com.guitarpractice.companion",
+    "productName": "Guitar Practice Companion",
+    "files": [
+      "dist/**/*",
+      "desktop/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "output": "release"
+    },
+    "mac": {
+      "icon": "build/icon.icns",
+      "target": "zip"
+    },
+    "win": {
+      "icon": "build/icon.ico",
+      "target": "portable"
+    },
+    "linux": {
+      "icon": "build/icons",
+      "target": "AppImage",
+      "category": "Utility",
+      "syncDesktopName": true
+    }
+  }
+}

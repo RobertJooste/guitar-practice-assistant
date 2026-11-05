@@ -1,0 +1,352 @@
+:root {
+  /* Brand */
+  --color-brand-500: #2d6cdf;
+  --color-brand-400: #4f8ef7;
+  --color-brand-100: #edf4ff;
+  --color-brand-50: #f5f9ff;
+  --color-on-brand: #ffffff;
+  --color-page-background: #f3f4f0;
+  --color-nav-idle: rgba(146, 167, 203, 0.14);
+
+  /* Surfaces */
+  --color-surface-0: #ffffff;
+  --color-surface-1: #f7faff;
+  --color-surface-2: #f4f7fc;
+
+  /* Text */
+  --color-text-primary: #172338;
+  --color-text-secondary: #5d6b87;
+  --color-text-muted: #7c8ab2;
+  --color-text-heading: #14213d;
+  --color-text-strong: #11213d;
+
+  /* Borders */
+  --color-border-subtle: #e3ebfb;
+  --color-border-default: #d4def7;
+  --color-border-medium: #ccd8e8;
+  --color-border-strong: #aeb9c8;
+
+  /* State colours */
+  --color-success-bg: #e4f8ea;
+  --color-success-text: #0f7c46;
+  --color-warning-bg: #fff2d6;
+  --color-warning-text: #9c6a11;
+  --color-info-bg: #eef3ff;
+  --color-info-text: #3b5ec1;
+  --color-danger-bg: #ffefef;
+  --color-danger-text: #a33030;
+  --color-note-root-bg: #e7aa45;
+  --color-note-root-text: #342100;
+  --color-note-root-border: #aa6d14;
+  --color-hero-start: #102b4e;
+  --color-hero-mid: #174b70;
+  --color-hero-end: #176a72;
+  --color-hero-glow: rgba(75, 205, 185, 0.32);
+  --color-hero-label: #b8d9e9;
+  --color-hero-action-bg: #d8f5ad;
+  --color-hero-action-text: #17341e;
+  --color-dashboard-accent-start: #174b70;
+  --color-dashboard-accent-end: #176a72;
+  --color-dashboard-accent-text: #ffffff;
+  --color-dashboard-accent-muted: #d1e7ed;
+  --color-dashboard-goal-start: #f1faf5;
+  --color-dashboard-goal-end: #f5f9ff;
+  --color-dashboard-chart-start: #f8fbff;
+  --color-dashboard-chart-end: #f1f6fc;
+  --color-dashboard-chart-bar-start: #58a8e4;
+  --color-dashboard-chart-bar-end: #2569b2;
+  --color-progress-track: #deebe5;
+  --color-progress-start: #1f9a72;
+  --color-progress-end: #69c69c;
+  --color-inspiration-bg: #f2f7ee;
+  --color-inspiration-border: #dbe7d5;
+  --color-inspiration-text: #53644e;
+  --color-code-bg: #0f172a;
+  --color-code-text: #e7f2ff;
+
+  /* Spacing (4-point scale) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* Border radii */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 3px rgba(18, 28, 45, 0.06);
+  --shadow-sm: 0 4px 12px rgba(18, 28, 45, 0.07);
+  --shadow-md: 0 8px 24px rgba(18, 28, 45, 0.09);
+
+  /* Typography */
+  --font-size-xs: 0.72rem;
+  --font-size-sm: 0.82rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.1rem;
+  --line-height-base: 1.5;
+
+  /* Global defaults */
+  color-scheme: light;
+  font-family: Inter, 'Segoe UI', Roboto, sans-serif;
+  line-height: var(--line-height-base);
+  font-weight: 400;
+  color: var(--color-text-primary);
+  background: var(--color-page-background);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root[data-app-theme='forest'] {
+  --color-brand-500: #28735d;
+  --color-brand-400: #419477;
+  --color-brand-100: #e4f2eb;
+  --color-brand-50: #f2f8f3;
+  --color-on-brand: #ffffff;
+  --color-page-background: #f1f3ed;
+  --color-nav-idle: rgba(102, 145, 117, 0.14);
+  --color-surface-0: #fffdf8;
+  --color-surface-1: #f4f7f1;
+  --color-surface-2: #ecf1e8;
+  --color-text-primary: #23372d;
+  --color-text-secondary: #586f60;
+  --color-text-muted: #758c7c;
+  --color-text-heading: #1d382c;
+  --color-text-strong: #1b3327;
+  --color-border-subtle: #dfe9dd;
+  --color-border-default: #ceddce;
+  --color-border-medium: #bfD1c2;
+  --color-border-strong: #9aaf9f;
+  --color-info-bg: #eaf2eb;
+  --color-info-text: #315f43;
+  --color-note-root-bg: #e7b45f;
+  --color-note-root-text: #422c0c;
+  --color-note-root-border: #a97b2f;
+  --color-hero-start: #183d32;
+  --color-hero-mid: #28624c;
+  --color-hero-end: #34796b;
+  --color-hero-glow: rgba(161, 205, 133, 0.3);
+  --color-hero-label: #c9e1c9;
+  --color-hero-action-bg: #dff0b5;
+  --color-hero-action-text: #27412a;
+  --color-dashboard-accent-start: #28624c;
+  --color-dashboard-accent-end: #34796b;
+  --color-dashboard-accent-muted: #d4e8dc;
+  --color-dashboard-goal-start: #eff8ee;
+  --color-dashboard-goal-end: #f5f6e9;
+  --color-dashboard-chart-start: #f5f9f1;
+  --color-dashboard-chart-end: #edf4e9;
+  --color-dashboard-chart-bar-start: #83bd84;
+  --color-dashboard-chart-bar-end: #367c63;
+  --color-progress-track: #e0ebe0;
+  --color-progress-start: #39835f;
+  --color-progress-end: #86bc76;
+  --color-inspiration-bg: #eff6e9;
+  --color-inspiration-border: #d8e7cf;
+  --color-inspiration-text: #4c6848;
+}
+
+:root[data-app-theme='ember'] {
+  --color-brand-500: #a64d34;
+  --color-brand-400: #cb7048;
+  --color-brand-100: #fae9dc;
+  --color-brand-50: #fff6ee;
+  --color-on-brand: #ffffff;
+  --color-page-background: #f5f1eb;
+  --color-nav-idle: rgba(184, 116, 72, 0.14);
+  --color-surface-0: #fffdfa;
+  --color-surface-1: #fff6ed;
+  --color-surface-2: #f8eee3;
+  --color-text-primary: #3c2c27;
+  --color-text-secondary: #735d53;
+  --color-text-muted: #987d70;
+  --color-text-heading: #422a22;
+  --color-text-strong: #39241d;
+  --color-border-subtle: #f0dfd1;
+  --color-border-default: #e6d0bf;
+  --color-border-medium: #d9bfaa;
+  --color-border-strong: #bda18b;
+  --color-info-bg: #fbece0;
+  --color-info-text: #81482e;
+  --color-note-root-bg: #e7ae54;
+  --color-note-root-text: #442b0b;
+  --color-note-root-border: #a87228;
+  --color-hero-start: #4a2924;
+  --color-hero-mid: #86422f;
+  --color-hero-end: #b35f3e;
+  --color-hero-glow: rgba(245, 173, 93, 0.28);
+  --color-hero-label: #f2d2b8;
+  --color-hero-action-bg: #ffe0a8;
+  --color-hero-action-text: #4a2a18;
+  --color-dashboard-accent-start: #86422f;
+  --color-dashboard-accent-end: #b35f3e;
+  --color-dashboard-accent-muted: #f6ddca;
+  --color-dashboard-goal-start: #fff2e7;
+  --color-dashboard-goal-end: #fff7e9;
+  --color-dashboard-chart-start: #fff8f0;
+  --color-dashboard-chart-end: #f8eee3;
+  --color-dashboard-chart-bar-start: #f1b267;
+  --color-dashboard-chart-bar-end: #b85e3f;
+  --color-progress-track: #efe2d6;
+  --color-progress-start: #b85e3f;
+  --color-progress-end: #e4a14f;
+  --color-inspiration-bg: #fff2e6;
+  --color-inspiration-border: #f0dcc9;
+  --color-inspiration-text: #735442;
+}
+
+:root[data-app-theme='midnight'] {
+  color-scheme: dark;
+  --color-brand-500: #72a9f6;
+  --color-brand-400: #91baff;
+  --color-brand-100: #263d5a;
+  --color-brand-50: #1c3049;
+  --color-on-brand: #102033;
+  --color-page-background: #111a25;
+  --color-nav-idle: rgba(169, 193, 222, 0.12);
+  --color-surface-0: #152233;
+  --color-surface-1: #1b2a3d;
+  --color-surface-2: #223349;
+  --color-text-primary: #e5edf7;
+  --color-text-secondary: #b2c0d2;
+  --color-text-muted: #94a7be;
+  --color-text-heading: #eff5fc;
+  --color-text-strong: #f3f7fc;
+  --color-border-subtle: #2a3b51;
+  --color-border-default: #354961;
+  --color-border-medium: #415771;
+  --color-border-strong: #627991;
+  --color-success-bg: #173b33;
+  --color-success-text: #8ce0bc;
+  --color-warning-bg: #45371f;
+  --color-warning-text: #f0c66f;
+  --color-info-bg: #1e3552;
+  --color-info-text: #a8cbff;
+  --color-danger-bg: #482b33;
+  --color-danger-text: #ffb4bc;
+  --color-note-root-bg: #e5b658;
+  --color-note-root-text: #2e2108;
+  --color-note-root-border: #c79536;
+  --color-hero-start: #101d32;
+  --color-hero-mid: #173557;
+  --color-hero-end: #155b64;
+  --color-hero-glow: rgba(76, 190, 180, 0.2);
+  --color-hero-label: #b6d4f6;
+  --color-hero-action-bg: #c8edb0;
+  --color-hero-action-text: #17341e;
+  --color-dashboard-accent-start: #1b456d;
+  --color-dashboard-accent-end: #17606a;
+  --color-dashboard-accent-text: #ffffff;
+  --color-dashboard-accent-muted: #d1e7ed;
+  --color-dashboard-goal-start: #18342f;
+  --color-dashboard-goal-end: #1c3047;
+  --color-dashboard-chart-start: #1a2b40;
+  --color-dashboard-chart-end: #1b2a3d;
+  --color-dashboard-chart-bar-start: #73b4f1;
+  --color-dashboard-chart-bar-end: #3c7fce;
+  --color-progress-track: #30433f;
+  --color-progress-start: #50bc8b;
+  --color-progress-end: #85d39c;
+  --color-inspiration-bg: #23372f;
+  --color-inspiration-border: #385346;
+  --color-inspiration-text: #c1d7c7;
+  --color-code-bg: #0a101a;
+  --color-code-text: #e4edf9;
+}
+
+:root[data-app-theme='lavender'] {
+  --color-brand-500: #7656aa;
+  --color-brand-400: #9272c7;
+  --color-brand-100: #eee8f8;
+  --color-brand-50: #f7f3fc;
+  --color-on-brand: #ffffff;
+  --color-page-background: #f3f1f6;
+  --color-nav-idle: rgba(145, 125, 183, 0.14);
+  --color-surface-0: #fffefe;
+  --color-surface-1: #f7f4fb;
+  --color-surface-2: #efebf6;
+  --color-text-primary: #302941;
+  --color-text-secondary: #685f7b;
+  --color-text-muted: #8c819f;
+  --color-text-heading: #35284c;
+  --color-text-strong: #2d2241;
+  --color-border-subtle: #e6dfef;
+  --color-border-default: #d8cfe5;
+  --color-border-medium: #c9bfd9;
+  --color-border-strong: #a99bbd;
+  --color-info-bg: #eee9f8;
+  --color-info-text: #59427f;
+  --color-note-root-bg: #e6b568;
+  --color-note-root-text: #422b10;
+  --color-note-root-border: #a67d40;
+  --color-hero-start: #2f284c;
+  --color-hero-mid: #59457e;
+  --color-hero-end: #765d93;
+  --color-hero-glow: rgba(197, 157, 229, 0.28);
+  --color-hero-label: #d9cbed;
+  --color-hero-action-bg: #e8ddff;
+  --color-hero-action-text: #392858;
+  --color-dashboard-accent-start: #59457e;
+  --color-dashboard-accent-end: #765d93;
+  --color-dashboard-accent-muted: #e5d9f1;
+  --color-dashboard-goal-start: #f4eefb;
+  --color-dashboard-goal-end: #f1f4fc;
+  --color-dashboard-chart-start: #faf7fd;
+  --color-dashboard-chart-end: #f0eef8;
+  --color-dashboard-chart-bar-start: #b59ae0;
+  --color-dashboard-chart-bar-end: #7456ab;
+  --color-progress-track: #e8e1ed;
+  --color-progress-start: #805cac;
+  --color-progress-end: #c28bc4;
+  --color-inspiration-bg: #f2eef9;
+  --color-inspiration-border: #e2d9ed;
+  --color-inspiration-text: #615474;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 0;
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.primary-button:hover,
+.secondary-button:hover,
+.danger-button:hover {
+  transform: translateY(-1px);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
